@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const dishImages = document.querySelectorAll(".dishes img");
 
-    // Add click event listeners to each dish image
+    
     dishImages.forEach(img => {
         img.addEventListener('click', function () {
-            const dishName = this.alt; // Use the alt text as the name 
+            const dishName = this.alt; // Uses the alt text as the name 
             let price, description;
 
-            
+
             switch (dishName) {
                 case 'Hibachi Bowl':
                     price = 14;
@@ -33,12 +33,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     price = 9;
                     description = 'Grilled chicken with pesto and fresh greens in a flatbread wrap.';
                     break;
-                default:
-                    price = 0;
-                    description = 'Description not available.';
+                case 'Supreme Pizza':
+                    price = 15;
+                    description = 'Delicious pizza topped with pepperoni, sausage, mushrooms, onions,and  green peppers.';
+                    break;
+                case 'Buffalo Wings':
+                    price = 11;
+                    description = 'Breaded chicken wings tossed in a tasty buffalo sauce. Served with a ranch cup.';
+                    break;
+                case 'Bacon & Cheese Fries':
+                    price = 4;
+                    description = 'Crispy fries toppedd with bacon and cheeese.';
+                    break;
+                ;
             }
 
-            // Updates the dish details
+           
             showDish(dishName, price, description);
         });
     });
