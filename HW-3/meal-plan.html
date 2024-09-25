@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  Name: Carissa Boddie
+  Date: 09.25.2024
+  CSC 372-01
+
+  This is the meal-plan.html page for Homework 2 of CSC 372 (Fall 2024). 
+  This page includes a list of recommended dishes. 
+  The user can click on any item and it it will be added to theeir meal plan on the right side of the page. 
+  The price of the item will also be added up for a total. 
+  The user could also use the remove button to take items off their meal plan list. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="JavaScript/meal-plan.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Plan Your Meal</h1>
+    </header>
+
+    <main>
+        <section class="meal-plan">
+            <div class="dish-list">
+                <h2>Recommended Dishes</h2>
+                <ul id="dish-list">
+                    <li>Salmon Poke Bowl - $14</li>
+                    <li>Tuna Poke Bowl - $13</li>
+                    <li>Vegetarian Poke Bowl - $12</li>
+                    <li>Island Green Smoothie - $7</li>
+                    <li>Bahama Mama Smoothie - $6</li>
+                    <li>Chicken Pesto Flatbread - $9</li>
+                </ul>
+            </div>
+            <div class="meal-plan-summary">
+                <h2>Your Meal Plan</h2>
+                <ul id="meal-plan">
+                    <!-- Selected dishes will be added here -->
+                </ul>
+                <p>Total: $<span id="total">0</span></p>
+            </div>
+        </section>
+    </main>
+    
+    <a href="index.html" class="back-home">Back to Home</a>
+    
+</body>
+
+</html>

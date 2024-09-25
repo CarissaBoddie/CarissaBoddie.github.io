@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  Name: Carissa Boddie
+  Date: 09.25.2024
+  CSC 372-01
+
+  This is the index.html page for Homework 2 of CSC 372 (Fall 2024). 
+  This page includes images of dishes from my personal suggestions of resturants at UNCG. 
+  The user will be able to click on the image and a the details of the dishes will be shown. 
+  At the bottom of the page the user can click and be linked to another oage where they could create their own meal plan. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCG Foodie Adventures</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="JavaScript/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>UNCG Foodie Adventures</h1>
+        <p>Explore the best food spots near Petty building!</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>Are you a culinary adventurer in search of the perfect meal on campus?...<br> 
+                Look no further! We've curated a list of the most exceptional dishes that are sure to tantalize your taste buds.
+                From healthy bowls to refreshing smoothies, this list has got you covered. So, put on your foodie hat and 
+                let's dive into the delightful world of flavors!</p>
+        </section>
+
+        <section class="recommendations">
+            <article>
+                <h3>Recommended Restaurant 1: Happy Bowl</h3>
+                <p>Location: 1201 W Gate City Blvd #102 | Hours: 11 AM - 9:30 PM | Specialties: Japanese Cuisine</p>
+                <div class="dishes">
+                    <img src="images/bowl1.jpg" alt="Hibachi Bowl">
+                    <img src="images/bowl2.jpg" alt="Tuna Poke Bowl">
+                    <img src="images/bowl3.jpg" alt="Chicken Poke Bowl">
+                </div>
+            </article>
+            <article>
+                <h3>Recommended Restaurant 2: Tropical Smoothie Café</h3>
+                <p>Location: 1201 W Gate City Blvd | Hours: 7 AM - 9 PM | Specialties: Smoothies and Sandwiches</p>
+                <div class="dishes">
+                    <img src="images/smoothie1.avif" alt="Island Green Smoothie">
+                    <img src="images/smoothie2.avif" alt="Bahama Mama Smoothie">
+                    <img src="images/smoothie3.avif" alt="Chicken Pesto Flatbread">
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Dish Details</h3>
+            <div id="dish-details">
+                <!-- Dish details will be displayed here -->
+            </div>
+        </aside>
+
+        <a href="meal-plan.html">CREATE YOUR OWN MEAL PLAN HERE!</a>
+    </main>
+
+    
+</body>
+
+</html>
