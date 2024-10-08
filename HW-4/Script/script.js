@@ -20,7 +20,7 @@ function startComputerTurn() {
     
     
     let shuffleInterval = setInterval(() => {
-        computerImg.src = ['images/rock.png', 'images/paper.png', 'images/scissors.png'][Math.floor(Math.random() * 3)];
+        computerImg.src = ['images/rock.PNG', 'images/paper.PNG', 'images/scissors.PNG'][Math.floor(Math.random() * 3)];
         computerImg.classList.remove('computer-choice'); 
     }, 500);
 
@@ -69,7 +69,7 @@ document.getElementById('reset').addEventListener('click', () => {
     ties = 0;
     updateScore();
     document.getElementById('result').textContent = 'Make your move!';
-    document.getElementById('computer-image').src = 'images/question-mark.png';  
+    document.getElementById('computer-image').src = 'images/question-mark.PNG';  
 
     
     choices.forEach(c => c.classList.remove('selected'));
