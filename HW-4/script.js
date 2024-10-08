@@ -20,7 +20,7 @@ function startComputerTurn() {
     
     
     let shuffleInterval = setInterval(() => {
-        computerImg.src = ['images/rock.PNG', 'images/paper.PNG', 'images/scissors.PNG'][Math.floor(Math.random() * 3)];
+        computerImg.src = ['rock.PNG', 'paper.PNG', 'scissors.PNG'][Math.floor(Math.random() * 3)];
         computerImg.classList.remove('computer-choice'); 
     }, 500);
 
@@ -28,7 +28,7 @@ function startComputerTurn() {
     setTimeout(() => {
         clearInterval(shuffleInterval);
         const computerChoice = ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)];
-        computerImg.src = `images/${computerChoice}.png`; 
+        computerImg.src = `${computerChoice}.PNG`; 
         computerImg.classList.add('computer-choice'); 
         determineWinner(computerChoice);
     }, 3000);
@@ -69,7 +69,7 @@ document.getElementById('reset').addEventListener('click', () => {
     ties = 0;
     updateScore();
     document.getElementById('result').textContent = 'Make your move!';
-    document.getElementById('computer-image').src = 'images/question-mark.PNG';  
+    document.getElementById('computer-image').src = 'question-mark.PNG';  
 
     
     choices.forEach(c => c.classList.remove('selected'));
