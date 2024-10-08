@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#player-throw img,
+#computer-throw img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.choice {
+    border: 2px solid transparent;
+}
+
+.selected {
+    border-color: red; 
+}
+
+#computer-image {
+    border: 2px solid transparent; 
+}
+
+.computer-choice {
+    border-color: blue; 
+}
+
+#outcome {
+    margin-top: 20px;
+}
+
+#score {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
